@@ -1,0 +1,213 @@
+header{
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    @media screen and (max-width:991px) {
+       
+    }
+}
+.top_bar{
+    background: $black;
+    height: 45px;
+    line-height: 45px;
+    letter-spacing: 0.5px;;
+    .top_bar_in{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        .top_bar_offer{
+            flex: 1;
+            color: $white;
+            text-align: center;
+        }
+        .top_bar_links{
+            position: absolute;
+            right: 0;
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+            a{
+                color: $white;
+                padding: 0px 5px;
+                margin: 0px 20px 0 0;
+                position: relative;
+                display: inline-block;
+                text-transform: uppercase;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    right: -10px;
+                    width: 1px;
+                    height: 110%; 
+                    top: -5%;
+                    background: $white;
+                    user-select: none;
+                }         
+            }
+            a:last-child{
+                margin-right: 0;
+                &::after{
+                    display: none; 
+                }
+            }
+        }
+    }
+}
+.navbar{
+    background: $white;
+    padding: 10px 0 0px;
+    @media screen and (max-width:991px) {
+        padding: 5px 0;
+    }    
+    .brand_icon_nav{
+        display: flex;
+        justify-content: space-between;
+        .search_comp_wrap{
+            position: relative;
+            align-self: center;
+            flex: 1;
+            input
+            {
+                width: 235px;
+                height: 35px;
+                line-height: 35px;
+                padding: 0 10px 0 25px;
+                border: none;
+                display: inline-block;
+                border-bottom: 1px solid $black;
+            }
+            img{
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            @media screen and (max-width:991px) {
+                display: none;
+            }
+        }
+        .brand_logo_wrap{
+            flex: 2;
+            text-align: center;
+            position: relative;
+            a{
+                img{
+                    margin:0 10px;
+                }
+            } 
+            .ham_burger_menu{
+                display: none;
+                @media screen and (max-width:991px) {
+                    position: absolute;
+                    left: -40px;
+                    width: 30px;
+                    height: 40px;
+                    display: block;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    span{
+                        display: block;
+                        margin: 10px 0;
+                        height: 1px;
+                        background: #000;
+                        transition: all linear .3s;
+                        
+                    }
+                    &.act_menu_icon
+                    {
+                        span:nth-child(1){
+                            background: #666;
+                            transform: rotate(45deg);  
+                            transform-origin: left center;                          
+                        }
+                        span:nth-child(2){
+                            background: #000; 
+                            opacity: 0;                       
+                        }
+                        span:nth-child(3){
+                            background: #666;
+                            transform: rotate(-45deg);   
+                            transform-origin: left center;                              
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width:991px) {
+                margin-left: 40px;
+            }           
+        }
+        .quick_icon_nav_wrap{
+            align-self: center;
+            display: flex;
+            flex: 1;
+            justify-content: end;
+            position: relative;
+            a{
+                padding: 5px 10px;
+                margin: 0px 5px;
+            }
+            .mob_search_icon{
+                display: none;
+            }
+            @media screen and (max-width:991px) {
+                flex: 0 0 auto;
+                .tab_mob_hid{
+                    display: none;
+                }                
+                .mob_search_icon{
+                    display: block;
+                    width: 25px;
+                    position: absolute;
+                    right: 70px;
+                    top:5px;
+                    z-index: 3;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    nav{
+        ul
+        {
+            display: flex;
+            justify-content: center;
+            li
+            {
+                margin: 5px 0px;
+                a{
+                    text-transform: uppercase;
+                    padding: 8px 20px;
+                    display: block;
+                    @media screen and (max-width:1024px) {
+                        padding: 10px;
+                        font-size: 14px;
+                    }
+                }
+                @media screen and (max-width:1366px) {
+                    margin: 5px 0px;
+                }
+            }
+            @media screen and (max-width:991px) {
+                flex-flow: column;
+            }             
+        }
+        @media screen and (max-width:991px) {
+            position: fixed;
+            width: 100%;
+            background: #f1f1f1;
+            height: 100%;
+            left: -100%;
+            padding: 40px;
+            transition: all linear .5s;
+            &.ham_nav_active{                
+                left: 0;
+            }
+        }
+    }
+}
