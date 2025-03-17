@@ -1,0 +1,33 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1_447" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+<g clip-path="url(#clip0_1_447)">
+<g clip-path="url(#clip1_1_447)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2285 8H1.5625H14.2285ZM14.2285 8L9.4785 3L14.2285 8ZM14.2285 8L9.4785 13L14.2285 8Z" fill="black"/>
+<path d="M14.2285 8H1.5625M14.2285 8L9.4785 3M14.2285 8L9.4785 13" stroke="black" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_1_447)">
+<rect width="15" height="15" transform="translate(0.5 0.5)" fill="#393939"/>
+<g clip-path="url(#clip2_1_447)">
+<g clip-path="url(#clip3_1_447)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2285 8H1.5625H14.2285ZM14.2285 8L9.4785 3L14.2285 8ZM14.2285 8L9.4785 13L14.2285 8Z" fill="#121212"/>
+<path d="M14.2285 8H1.5625M14.2285 8L9.4785 3M14.2285 8L9.4785 13" stroke="#121212" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_447">
+<rect width="15" height="15" fill="white" transform="translate(0.5 0.5)"/>
+</clipPath>
+<clipPath id="clip1_1_447">
+<rect width="15" height="15" fill="white" transform="translate(0.5 0.5)"/>
+</clipPath>
+<clipPath id="clip2_1_447">
+<rect width="15" height="15" fill="white" transform="translate(0.5 0.5)"/>
+</clipPath>
+<clipPath id="clip3_1_447">
+<rect width="15" height="15" fill="white" transform="translate(0.5 0.5)"/>
+</clipPath>
+</defs>
+</svg>

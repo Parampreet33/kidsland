@@ -1,0 +1,22 @@
+body,input,textarea,button,p,a,li,select,
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    line-height: 1.5;
+    color: $black;
+    font-family: $text;
+}
+
+
+
+.align-center{
+    text-align: center;
+}
+.container{
+    width: 95%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+    
+.container-fluid{
+    width: 100%;
+}
